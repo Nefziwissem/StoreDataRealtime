@@ -78,10 +78,11 @@ public class UpdateActivity extends AppCompatActivity {
             updateDesc.setText(bundle.getString("Description"));
             updateLang.setText(bundle.getString("Language"));
             key = bundle.getString("Key");
+
             oldImageURL = bundle.getString("Image");
 
         }
-        databaseReference = FirebaseDatabase.getInstance().getReference("Android Tutorials").child(key);
+        databaseReference = FirebaseDatabase.getInstance().getReference("Android Turtoils").child(key);
 
 
         updateImage.setOnClickListener(new View.OnClickListener() {
